@@ -1,3 +1,8 @@
+import { defineConfig } from "vite";   // ✅ THIS WAS MISSING
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+import { componentTagger } from "lovable-tagger";
+
 export default defineConfig(({ mode }) => ({
   base: "/mysite/",   // 🔥 MUST match repo name exactly
 
